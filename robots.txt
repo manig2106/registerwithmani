@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manig2106.github.io/registerwithmani/sitemap.xml
