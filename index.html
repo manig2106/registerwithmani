@@ -3,30 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>RegisterWithMani | DSC, IEC & MSME Registration Assistance</title>
 <meta name="description" content="RegisterWithMani provides professional assistance for DSC, IEC and MSME/Udyam registration.">
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10233f;background:#f7faff}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#fff;border-bottom:1px solid #e8eef7;position:sticky;top:0;z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#fff;border-bottom:1px solid #e8eef7;position:sticky;top:0;z-index:10}
 .logo{font-size:25px;font-weight:800;color:#102d55}.logo span{color:#1976d2}nav a{margin-left:22px;text-decoration:none;color:#31455f;font-weight:600}
-.hero{padding:85px 7%;background:linear-gradient(135deg,#eef6ff,#fff)}.hero h1{font-size:clamp(38px,5vw,58px);line-height:1.08;margin:18px 0;max-width:760px}.hero h1 span{color:#1976d2}.hero p{font-size:19px;line-height:1.6;max-width:700px;color:#52657d}
+.hero{padding:70px 7%;background:linear-gradient(135deg,#eef6ff,#fff);display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;min-height:590px}
+.badge{display:inline-block;background:#e5f2ff;color:#1263a8;padding:8px 13px;border-radius:20px;font-weight:700;font-size:13px}
+.hero h1{font-size:clamp(40px,5vw,60px);line-height:1.06;margin:20px 0 18px;max-width:760px}.hero h1 span{color:#1976d2}.hero p{font-size:19px;line-height:1.65;max-width:700px;color:#52657d}
 .btn{display:inline-block;padding:14px 23px;border-radius:9px;text-decoration:none;font-weight:700;margin:8px 8px 0 0}.primary{background:#1976d2;color:#fff}.secondary{background:#fff;color:#1976d2;border:1px solid #b9d5f3}
-section{padding:68px 7%}.title{text-align:center;font-size:32px;margin:0 0 38px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;padding:30px;border-radius:15px;box-shadow:0 8px 25px #163b6412;border:1px solid #e6eef8}.card h3{font-size:23px;margin:12px 0}.price{font-size:30px;font-weight:800;color:#1976d2}.card li{margin:10px 0;color:#52657d}.badge{display:inline-block;background:#e5f2ff;color:#1263a8;padding:7px 12px;border-radius:20px;font-weight:700;font-size:13px}
+.visual{position:relative;max-width:480px;width:100%;margin:auto}.visual-card{background:#fff;border:1px solid #dbe8f5;border-radius:22px;padding:28px;box-shadow:0 20px 45px #163b6418}.visual-title{font-size:18px;font-weight:800;margin-bottom:20px;color:#102d55}
+.service-row{display:flex;align-items:center;gap:16px;padding:17px 0;border-bottom:1px solid #edf2f7}.service-row:last-child{border-bottom:0}.icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:25px;background:#eef6ff}.service-name{font-weight:800;font-size:18px}.service-desc{font-size:13px;color:#6a7b8f;margin-top:4px}.mini-price{margin-left:auto;font-weight:800;color:#1976d2}
+.start-card{position:absolute;right:-18px;bottom:-25px;background:#102d55;color:#fff;border-radius:16px;padding:17px 22px;box-shadow:0 12px 30px #102d5530}.start-card small{display:block;color:#cfe0f2;font-size:11px}.start-card strong{font-size:24px;color:#fff}
+section{padding:68px 7%}.title{text-align:center;font-size:32px;margin:0 0 38px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;padding:30px;border-radius:15px;box-shadow:0 8px 25px #163b6412;border:1px solid #e6eef8}.card h3{font-size:23px;margin:12px 0}.price{font-size:30px;font-weight:800;color:#1976d2}.card li{margin:10px 0;color:#52657d}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{background:#fff;padding:25px;border-radius:14px;border:1px solid #e6eef8}.num{font-size:28px;font-weight:800;color:#1976d2}
 .faq{max-width:850px;margin:auto}.faq details{background:#fff;border:1px solid #e6eef8;border-radius:12px;padding:18px 20px;margin:12px 0}.faq summary{font-weight:700;cursor:pointer}.faq p{color:#52657d;line-height:1.6}
 .contact{text-align:center;background:#102d55;color:#fff}.contact .title{color:#fff}.contact p{color:#d8e6f5}.contact .secondary{background:transparent;color:#fff;border-color:#fff}
 footer{text-align:center;padding:24px;color:#66778c;font-size:13px;line-height:1.6}
-@media(max-width:750px){.grid,.steps{grid-template-columns:1fr}nav a{display:none}.hero{padding:65px 6%}section{padding:55px 6%}.hero h1{font-size:40px}}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding:60px 6%}.visual{max-width:520px}.grid,.steps{grid-template-columns:1fr}nav a{display:none}section{padding:55px 6%}.start-card{right:5px}}
+@media(max-width:500px){.hero h1{font-size:40px}.hero p{font-size:17px}.visual-card{padding:20px}.mini-price{font-size:14px}}
 </style>
 </head>
 <body>
 <nav><div class="logo">Register<span>WithMani</span></div><div><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
 
 <header class="hero">
+<div>
 <span class="badge">BUSINESS REGISTRATION & DIGITAL SERVICES</span>
 <h1>Simple. Professional.<br><span>Hassle-Free.</span></h1>
 <p>Professional assistance for DSC, IEC and MSME/Udyam registration for businesses, entrepreneurs and professionals.</p>
 <a class="btn primary" href="#contact">Get Started</a><a class="btn secondary" href="#services">View Services</a>
+</div>
+<div class="visual">
+<div class="visual-card">
+<div class="visual-title">Our Key Services</div>
+<div class="service-row"><div class="icon">🔐</div><div><div class="service-name">DSC</div><div class="service-desc">Digital Signature Certificate</div></div><div class="mini-price">₹3,000</div></div>
+<div class="service-row"><div class="icon">🌐</div><div><div class="service-name">IEC</div><div class="service-desc">Import Export Code</div></div><div class="mini-price">₹2,500</div></div>
+<div class="service-row"><div class="icon">🏢</div><div><div class="service-name">MSME</div><div class="service-desc">MSME / Udyam Registration</div></div><div class="mini-price">₹999</div></div>
+</div>
+<div class="start-card"><small>SERVICES STARTING FROM</small><strong>₹999</strong></div>
+</div>
 </header>
 
 <section id="services"><h2 class="title">Our Services</h2><div class="grid">
